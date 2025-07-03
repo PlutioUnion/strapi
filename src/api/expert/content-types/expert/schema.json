@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experts",
+  "info": {
+    "singularName": "expert",
+    "pluralName": "experts",
+    "displayName": "Experts",
+    "name": "experts",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "bio": {
+      "type": "text"
+    },
+    "languages": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "userId": {
+      "type": "uid",
+      "required": true
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "expertSince_next": {
+      "type": "date"
+    },
+    "location_next": {
+      "type": "json",
+      "required": false
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "website": {
+      "type": "string"
+    },
+    "pricing": {
+      "type": "integer",
+      "min": 1
+    },
+    "contactPrompt": {
+      "type": "string"
+    },
+    "services": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::expert.expert-service",
+      "inversedBy": "experts"
+    }
+  }
+}

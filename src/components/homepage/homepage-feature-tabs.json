@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_homepage_homepage_feature_tabs",
+  "info": {
+    "displayName": "HomepageFeatureTabs",
+    "icon": "align-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "upperTitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "homepageFeatureTabItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.homepage-feature-tab-item"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sections_product_list_sections",
+  "info": {
+    "displayName": "ProductListSection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "suptitle": {
+      "type": "string",
+      "default": "The all-in-one solution"
+    },
+    "title": {
+      "type": "string",
+      "default": "See everything Plutio can offer"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "showImages": {
+      "type": "boolean",
+      "default": false
+    },
+    "isHidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

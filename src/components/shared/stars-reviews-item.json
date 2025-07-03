@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shared_stars_reviews_items",
+  "info": {
+    "displayName": "StarsReviewsItem",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "stars": {
+      "type": "integer",
+      "max": 5,
+      "min": 1,
+      "default": 5
+    },
+    "rating": {
+      "type": "decimal",
+      "max": 5,
+      "min": 0
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_sections_spotlight_sections",
+  "info": {
+    "displayName": "SpotlightSection",
+    "icon": "crown",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ]
+    },
+    "info": {
+      "type": "string",
+      "required": false
+    },
+    "logos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::logo.logo"
+    },
+    "alt": {
+      "type": "string"
+    },
+    "isHidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

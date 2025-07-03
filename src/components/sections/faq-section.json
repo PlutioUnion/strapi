@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_sections_faq_sections",
+  "info": {
+    "displayName": "FAQSection",
+    "icon": "bars",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Frequently Asked Questions",
+      "required": true
+    },
+    "questions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.item"
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "_style2"
+      ]
+    },
+    "isHidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

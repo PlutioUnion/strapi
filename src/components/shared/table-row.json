@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_shared_table_rows",
+  "info": {
+    "displayName": "TableRow",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "col1": {
+      "type": "string"
+    },
+    "col2": {
+      "type": "string"
+    },
+    "col3": {
+      "type": "string"
+    },
+    "col4": {
+      "type": "string"
+    },
+    "col5": {
+      "type": "string"
+    },
+    "col6": {
+      "type": "string"
+    },
+    "col7": {
+      "type": "string"
+    },
+    "col8": {
+      "type": "string"
+    },
+    "col9": {
+      "type": "string"
+    },
+    "col10": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_sections_items",
+  "info": {
+    "displayName": "items",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "size-m"
+      ]
+    }
+  }
+}

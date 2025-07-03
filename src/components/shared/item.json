@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_item",
+  "info": {
+    "displayName": "item",
+    "icon": "genderless",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

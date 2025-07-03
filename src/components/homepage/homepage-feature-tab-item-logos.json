@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_homepage_homepage_feature_tab_item_logos",
+  "info": {
+    "displayName": "HomepageFeatureTabItemLogos",
+    "icon": "angry"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "logos": {
+      "type": "media",
+      "allowedTypes": ["images"],
+      "required": false
+    }
+  }
+}

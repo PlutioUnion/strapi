@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_feature_features",
+  "info": {
+    "displayName": "FeatureComponent",
+    "icon": "align-center",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "feature.cta"
+    },
+    "checkListTitle": {
+      "type": "string"
+    },
+    "checkItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "feature.check-items"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "feature.image-block"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "collectionName": "components_compare_items",
+  "info": {
+    "displayName": "item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "leftTitle": {
+      "type": "string"
+    },
+    "leftImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "leftDescription": {
+      "type": "text"
+    },
+    "rightTitle": {
+      "type": "string"
+    },
+    "rightImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "rightDescription": {
+      "type": "text"
+    },
+    "leftLink": {
+      "type": "string"
+    },
+    "rightLink": {
+      "type": "string"
+    },
+    "leftLinkTitle": {
+      "type": "string"
+    },
+    "rightLinkTitle": {
+      "type": "string"
+    },
+    "suptitle": {
+      "type": "string"
+    },
+    "maxWidthTitle": {
+      "type": "integer",
+      "default": 800
+    },
+    "maxWidthSubTitle": {
+      "type": "integer",
+      "default": 700
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_sections_top_sections",
+  "info": {
+    "displayName": "TopSection",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "suptitle": {
+      "type": "string",
+      "required": false
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "subtitle": {
+      "type": "text",
+      "required": false
+    },
+    "ctaBoxItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.cta-box-item",
+      "required": false,
+      "max": 1
+    },
+    "ctaBoxItemsLoggedIn": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.cta-box-item",
+      "required": false,
+      "max": 3
+    },
+    "maxWidthTitle": {
+      "type": "integer"
+    },
+    "maxWidthSubTitle": {
+      "type": "integer"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "isHidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

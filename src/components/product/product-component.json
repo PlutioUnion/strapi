@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_product_product_components",
+  "info": {
+    "displayName": "ProductComponent",
+    "icon": "shopping-cart",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "product.cta"
+    },
+    "quote": {
+      "type": "component",
+      "repeatable": false,
+      "component": "product.quote"
+    },
+    "checkitems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.check-item"
+    },
+    "title": {
+      "type": "string"
+    },
+    "upperTitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "checkListTitle": {
+      "type": "string"
+    },
+    "gridItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.grid-item"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.images"
+    },
+    "sectionClasses": {
+      "type": "json"
+    }
+  }
+}

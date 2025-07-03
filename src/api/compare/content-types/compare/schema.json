@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "compares",
+  "info": {
+    "singularName": "compare",
+    "pluralName": "compares",
+    "displayName": "Compares",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "topSection": {
+      "type": "component",
+      "component": "sections.top-section",
+      "repeatable": false,
+      "required": true
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.cta-section",
+        "sections.faq-section",
+        "sections.items-section",
+        "sections.reviews-section",
+        "sections.spotlight-section",
+        "sections.templates-section",
+        "sections.tour-section",
+        "sections.compare-section",
+        "sections.compare-info-section",
+        "sections.testimonial-section",
+        "sections.top-section",
+        "sections.product-list-section",
+        "sections.benefits",
+        "sections.story-section",
+        "sections.stars-reviews-section",
+        "sections.story-tabs",
+        "homepage.homepage-feature-tabs",
+        "sections.table-section"
+      ]
+    }
+  }
+}

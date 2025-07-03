@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_tour_sections",
+  "info": {
+    "displayName": "TourSection",
+    "icon": "baby-carriage"
+  },
+  "options": {},
+  "attributes": {
+    "sections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.tour-item"
+    },
+    "isHidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

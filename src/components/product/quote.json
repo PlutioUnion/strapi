@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_product_quotes",
+  "info": {
+    "displayName": "Quote",
+    "icon": "comments"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "allowedTypes": ["images"],
+      "required": false
+    },
+    "authorName": {
+      "type": "string"
+    },
+    "quote": {
+      "type": "string"
+    }
+  }
+}

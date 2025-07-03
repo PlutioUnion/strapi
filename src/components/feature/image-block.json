@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_feature_image_blocks",
+  "info": {
+    "displayName": "Image Block",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "allowedTypes": ["files", "images", "videos"],
+      "required": false
+    },
+    "titleIcon": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "showcases",
+  "info": {
+    "singularName": "story",
+    "pluralName": "stories",
+    "displayName": "Stories",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "author": {
+      "type": "string"
+    },
+    "authorLabel": {
+      "type": "string"
+    },
+    "authorQuote": {
+      "type": "string"
+    },
+    "themeColor": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "spotlightScreenshot": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "spotlightPortrait": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "pageUpperTitle": {
+      "type": "string",
+      "default": "Story"
+    },
+    "pageTitle": {
+      "type": "string"
+    },
+    "pageDescription": {
+      "type": "string"
+    },
+    "pageSlug": {
+      "type": "uid",
+      "targetField": "pageTitle",
+      "required": true
+    },
+    "pageMetaTitle": {
+      "type": "string"
+    },
+    "pageMetaDescription": {
+      "type": "string"
+    },
+    "pageContent": {
+      "type": "richtext"
+    }
+  }
+}

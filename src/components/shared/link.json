@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_generic_links",
+  "info": {
+    "displayName": "link",
+    "icon": "audio-description",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "href": {
+      "type": "string",
+      "required": false
+    },
+    "icon": {
+      "type": "string",
+      "required": false
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "button",
+        "primary"
+      ],
+      "default": "button"
+    },
+    "openNewTab": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

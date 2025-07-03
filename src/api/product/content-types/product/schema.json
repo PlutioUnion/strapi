@@ -1,0 +1,85 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_pages",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Products",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "topSection": {
+      "type": "component",
+      "component": "sections.top-section",
+      "repeatable": false,
+      "required": true
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.cta-section",
+        "sections.faq-section",
+        "sections.items-section",
+        "sections.reviews-section",
+        "sections.spotlight-section",
+        "sections.templates-section",
+        "sections.tour-section",
+        "sections.testimonial-section",
+        "sections.product-list-section",
+        "sections.compare-info-section",
+        "sections.testimonial-section",
+        "sections.top-section",
+        "sections.product-list-section",
+        "sections.benefits",
+        "sections.story-section",
+        "sections.stars-reviews-section",
+        "sections.story-tabs",
+        "homepage.homepage-feature-tabs",
+        "sections.table-section"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "iconProduct": {
+      "type": "string"
+    },
+    "showProductInMenu": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "position": {
+      "type": "integer",
+      "default": 999,
+      "min": 1,
+      "required": false,
+      "unique": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

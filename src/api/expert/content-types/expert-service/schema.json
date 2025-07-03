@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experts_services",
+  "info": {
+    "singularName": "expert-service",
+    "pluralName": "expert-services",
+    "displayName": "Expert-services",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "experts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::expert.expert",
+      "inversedBy": "services"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_homepage_homepage_feature_tab_items",
+  "info": {
+    "displayName": "HomepageFeatureTabItem",
+    "icon": "chevron-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "extendedTitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "actionTitle": {
+      "type": "string"
+    },
+    "actionHref": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "allowedTypes": ["images"],
+      "required": false
+    },
+    "media": {
+      "type": "media",
+      "allowedTypes": ["images", "videos"],
+      "required": false
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.homepage-feature-tab-item-tag"
+    },
+    "logos": {
+      "type": "component",
+      "repeatable": false,
+      "component": "homepage.homepage-feature-tab-item-logos"
+    }
+  }
+}

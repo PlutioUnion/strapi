@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_shared_tour_items",
+  "info": {
+    "displayName": "TourItem",
+    "icon": "caret-square-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "suptitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.image"
+    },
+    "grid": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.item"
+    },
+    "inverse": {
+      "type": "boolean"
+    },
+    "maxWidthTitle": {
+      "type": "integer"
+    },
+    "maxWidthSubTitle": {
+      "type": "integer"
+    },
+    "maxWidthDescription": {
+      "type": "integer"
+    }
+  }
+}

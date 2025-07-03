@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_sections_compare_sections",
+  "info": {
+    "displayName": "CompareSection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "suptitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "compare.item"
+    },
+    "isHidden": {
+      "type": "boolean",
+      "default": false
+    },
+    "maxWidthTitle": {
+      "type": "integer",
+      "default": 800
+    },
+    "maxWidthSubTitle": {
+      "type": "integer",
+      "default": 700
+    }
+  }
+}

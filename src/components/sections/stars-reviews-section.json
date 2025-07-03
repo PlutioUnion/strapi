@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_stars_reviews_sections",
+  "info": {
+    "displayName": "StarsReviewsSection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "starReviews": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.stars-reviews-item"
+    },
+    "isHidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

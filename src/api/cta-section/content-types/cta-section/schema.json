@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "cta_sections",
+  "info": {
+    "singularName": "cta-section",
+    "pluralName": "cta-sections",
+    "displayName": "Cta-section",
+    "name": "cta-section"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "suptitle": {
+      "type": "string",
+      "required": true,
+      "default": "Supercharge Your Business"
+    },
+    "title": {
+      "type": "string",
+      "default": "All the tools you need in one intuitive platform",
+      "required": true
+    },
+    "ctaBoxItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.cta-box-item",
+      "required": true,
+      "min": 1,
+      "max": 1
+    }
+  }
+}

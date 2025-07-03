@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "changelogs",
+  "info": {
+    "singularName": "changelog",
+    "pluralName": "changelogs",
+    "displayName": "Changelog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "shortTitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "changelog": {
+      "displayName": "changelog",
+      "type": "component",
+      "repeatable": true,
+      "component": "changelog.changelog"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_sections_table_sections",
+  "info": {
+    "displayName": "TableSection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "table": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.table-row"
+    },
+    "isHidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

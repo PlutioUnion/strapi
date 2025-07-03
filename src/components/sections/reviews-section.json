@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_sections_reviews_sections",
+  "info": {
+    "displayName": "ReviewsSection",
+    "icon": "qrcode",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "suptitle": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "subtitle": {
+      "type": "text",
+      "required": false
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "required": false,
+      "component": "shared.link"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review"
+    },
+    "isHidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

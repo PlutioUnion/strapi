@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_sections_items_sections",
+  "info": {
+    "displayName": "ItemsSection",
+    "icon": "dice-four",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "suptitle": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text",
+      "required": true
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.image-item",
+      "required": true,
+      "min": 2,
+      "max": 8
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "_cards",
+        "_blocks"
+      ],
+      "required": true
+    },
+    "maxWidthTitle": {
+      "type": "integer"
+    },
+    "maxWidthSubTitle": {
+      "type": "integer"
+    },
+    "isHidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

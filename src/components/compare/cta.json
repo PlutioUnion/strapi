@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_compare_ctas",
+  "info": {
+    "displayName": "CTA",
+    "icon": "arrow-right"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}

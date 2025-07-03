@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_testimonial_section_s",
+  "info": {
+    "displayName": "TestimonialSection ",
+    "icon": "desktop",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review"
+    },
+    "isHidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

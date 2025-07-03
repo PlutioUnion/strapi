@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_homepage_homepage_feature_tab_item_tags",
+  "info": {
+    "displayName": "HomepageFeatureTabItemTag",
+    "icon": "backspace"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

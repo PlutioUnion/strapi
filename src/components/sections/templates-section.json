@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_sections_templates_sections",
+  "info": {
+    "displayName": "TemplatesSection",
+    "icon": "arrow-alt-circle-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "suptitle": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "template_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::template.template-type"
+    },
+    "maxWidthTitle": {
+      "type": "integer"
+    },
+    "maxWidthSubTitle": {
+      "type": "integer"
+    },
+    "maxWidthDescription": {
+      "type": "integer"
+    },
+    "amountToShow": {
+      "type": "integer",
+      "default": 4
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::template.template-category"
+    },
+    "isHidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_shared_cta_items",
+  "info": {
+    "displayName": "CtaBoxItem",
+    "icon": "band-aid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "string",
+      "required": false
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": ["button", "primary"],
+      "default": "button"
+    },
+    "openNewTab": {
+      "type": "boolean",
+      "default": true
+    },
+    "info": {
+      "type": "string"
+    }
+  }
+}

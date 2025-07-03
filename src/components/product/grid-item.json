@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_product_grid_items",
+  "info": {
+    "displayName": "grid item",
+    "icon": "chess-board"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

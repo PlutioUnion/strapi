@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_sections_story_sections",
+  "info": {
+    "displayName": "StorySection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "suptitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "isHidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

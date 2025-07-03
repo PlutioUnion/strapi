@@ -1,0 +1,93 @@
+{
+  "kind": "collectionType",
+  "collectionName": "templates",
+  "info": {
+    "singularName": "template",
+    "pluralName": "templates",
+    "displayName": "Templates",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ],
+      "default": "pending"
+    },
+    "ref_id": {
+      "type": "string",
+      "required": true
+    },
+    "template_id": {
+      "type": "string",
+      "required": true
+    },
+    "original_template_id": {
+      "type": "string",
+      "required": true
+    },
+    "likes_count": {
+      "min": 0,
+      "default": 0,
+      "type": "integer"
+    },
+    "view_count": {
+      "min": 0,
+      "default": 0,
+      "type": "integer"
+    },
+    "add_count": {
+      "min": 0,
+      "default": 0,
+      "type": "integer"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "template_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::template.template-category",
+      "inversedBy": "templates"
+    },
+    "template_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::template.template-type",
+      "inversedBy": "templates"
+    },
+    "language": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

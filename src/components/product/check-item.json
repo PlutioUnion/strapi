@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_product_check_items",
+  "info": {
+    "displayName": "Check item",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

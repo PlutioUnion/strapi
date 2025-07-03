@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_changelog_changelogs",
+  "info": {
+    "displayName": "changelog",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "cta": {
+      "displayName": "cta",
+      "type": "component",
+      "repeatable": false,
+      "component": "changelog.cta"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "changelog.images"
+    },
+    "taskNumber": {
+      "type": "integer"
+    },
+    "taskType": {
+      "type": "enumeration",
+      "enum": [
+        "Bug",
+        "Improvement",
+        "New"
+      ],
+      "required": true
+    },
+    "taskId": {
+      "type": "string"
+    }
+  }
+}
