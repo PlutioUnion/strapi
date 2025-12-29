@@ -37,6 +37,9 @@
     },
     "taskId": {
       "type": "string"
+    },
+    "taskUTM": {
+      "type": "string"
     }
   }
 }
