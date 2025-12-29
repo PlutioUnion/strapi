@@ -48,7 +48,7 @@ const templateStatusWebhook = async ({ status, templateLibraryId }) => {
       ? "https://app.plutio.com"
       : "http://app.plutio.localhost:3000";
 
-  const pathname = `/webhooks/templates-library/${templateLibraryId}/status`;
+  const pathname = `/webhooks/templates-library/${templateLibraryId}/status` || '';
 
   const url = baseUrl + pathname;
   const opts = {
